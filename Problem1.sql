@@ -4,7 +4,6 @@ CREATE DATABASE music_library;
 USE music_library;
 
 
--- Create the Albums table
 CREATE TABLE albums (
   id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(150),
@@ -16,13 +15,13 @@ CREATE TABLE albums (
   FOREIGN KEY (genre_id) REFERENCES genres(id)
 );
 
--- Create the Genres table
+
 CREATE TABLE genres (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(100)
 );
 
--- Create the Artists table
+
 CREATE TABLE artists (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(150),
